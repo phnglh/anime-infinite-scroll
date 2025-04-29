@@ -1,5 +1,6 @@
 {
   "name": "vite-react-demo-app",
+  "homepage": "https://phnglh.github.io/anime-search-infinite",
   "version": "0.0.0",
   "private": true,
   "type": "module",
