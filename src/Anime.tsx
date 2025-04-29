@@ -23,10 +23,15 @@ function AnimeList({ name }: { name: string }) {
   const [hasMore, setHasMore] = useState(true);
   const loaderRef = useRef<HTMLDivElement>(null);
 
+  const API_BASE =
+  import.meta.env.DEV
+    ? "/api/anime"
+    : "https://api.jikan.moe/v4/anime";
+
   const { isPending, error, data } = useQuery<AnimeListResponse>({
     queryKey: ["anime", name, page],
     queryFn: () =>
-      fetch(`/api/anime?q=${name}&page=${page}&limit=5`).then((res) =>
+     fetch(`${API_BASE}?q=${name}&page=${page}&limit=5`).then((res) =>
         res.json()
       ),
     enabled: !!name && hasMore,
