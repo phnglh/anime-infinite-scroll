@@ -10,6 +10,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  base: '/anime-infinite-scroll/',
   server: {
     cors: true,
     proxy: {
