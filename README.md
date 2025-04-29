@@ -1,7 +1,12 @@
-<h1 align="center">Vite-react-demo</h1>
-<p>
-  This is a demo project for Vite + React + TailwindCSS + @TanStack/Query + React-Hook-Form + TypeScript.
-</p>
+# Anime Search Infinite
+
+A React-based web app for searching and exploring anime with infinite scroll. Powered by React Query for efficient data fetching and IntersectionObserver for seamless loading. Users can search anime titles and view details like episodes, duration, and synopsis, with more data loaded as they scroll.
+
+## Features
+- Search anime by name in real-time.
+- Infinite scroll to load more anime as you scroll.
+- Displays anime details: title, type, episodes, duration, and synopsis.
+- Built with React, React Query, and IntersectionObserver.
 
 
 ## Tech Stack
